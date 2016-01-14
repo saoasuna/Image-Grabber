@@ -13,7 +13,6 @@ import android.os.SystemClock;
 import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 
-import com.bignerdranch.android.photograbber.R;
 
 import java.util.List;
 
@@ -26,8 +25,8 @@ public class PollService extends IntentService {
 
     private static final long POLL_INTERVAL = 30*1000; //AlarmManager.INTERVAL_FIFTEEN_MINUTES;
 
-    public static final String ACTION_SHOW_NOTIFICATION = "com.bignerdranch.android.photogallery.SHOW_NOTIFICATION";
-    public static final String PERM_PRIVATE = "com.bignerdranch.android.photogallery.PRIVATE";
+    public static final String ACTION_SHOW_NOTIFICATION = "saoasuna.flickrbooru.android.photogallery.SHOW_NOTIFICATION";
+    public static final String PERM_PRIVATE = "saoasuna.flickrbooru.android.photogallery.PRIVATE";
     public static final String REQUEST_CODE = "REQUEST_CODE";
     public static final String NOTIFICATION = "NOTIFICATION";
 

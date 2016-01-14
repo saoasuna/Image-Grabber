@@ -11,7 +11,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-import com.bignerdranch.android.photograbber.R;
 
 /**
  * Created by Ryan on 10/11/2015.

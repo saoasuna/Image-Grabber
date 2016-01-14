@@ -19,7 +19,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.bignerdranch.android.photograbber.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,7 +78,7 @@ public class PhotoGalleryFragment extends VisibleFragment {
         public void onBindViewHolder (PhotoHolder photoHolder, int position) {
             GalleryItem galleryItem = mGalleryItems.get(position);
             photoHolder.bindGalleryItem(galleryItem);
-            Drawable placeholder = getResources().getDrawable(R.drawable.bill_up_close);
+            Drawable placeholder = getResources().getDrawable(R.drawable.loading);
             photoHolder.bindDrawable(placeholder); // bind the placeholder photo
             mThumbnailDownloader.queueThumbnail(photoHolder, galleryItem.getUrl()); // start downloading the photo
         }
@@ -99,13 +98,7 @@ public class PhotoGalleryFragment extends VisibleFragment {
         }
         @Override
         protected List<GalleryItem> doInBackground(Void... params) {
-            /*try {
-                String result = new FlickrFetchr().getUrlString("https://www.bignerdranch.com");
-                Log.i(TAG, "Fetched contents of URL: " + result);
-            } catch(IOException ioe) {
-                Log.e(TAG, "Failed to fetch URL: ", ioe);
-            } */
-            //return new FlickrFetchr().fetchItems();
+
 
 
 

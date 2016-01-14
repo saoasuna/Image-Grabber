@@ -32,7 +32,7 @@ public class FlickrFetchr {
 
 
     public byte[] getUrlBytes(String urlSpec) throws IOException {
-        URL url = new URL(urlSpec); // create url object from string - for ex: "https://www.bignerdranch.com"
+        URL url = new URL(urlSpec); // create url object from string
         HttpURLConnection connection = (HttpURLConnection) url.openConnection(); //create connection object pointed at URL
     // can cast to http to give http-specific interfaces since the url was made from "https"
         try {

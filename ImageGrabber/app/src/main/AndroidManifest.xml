@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bignerdranch.android.photograbber" >
-    <permission android:name="com.bignerdranch.android.photograbber.PRIVATE"
+    package="saoasuna.flickrbooru.android.photograbber" >
+    <permission android:name="saoasuna.flickrbooru.android.photograbber.PRIVATE"
                 android:protectionLevel ="signature"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-    <uses-permission android:name="com.bignerdranch.android.photograbber.PRIVATE"/>
+    <uses-permission android:name="saoasuna.flickrbooru.android.photograbber.PRIVATE"/>
 
     <application
         android:allowBackup="true"
@@ -35,7 +35,7 @@
             <intent-filter
                 android:priority = "-999">
                 <action
-                    android:name="com.bignerdranch.android.photogallery.SHOW_NOTIFICATION"/>
+                    android:name="saoasuna.flickrbooruandroid.photogallery.SHOW_NOTIFICATION"/>
             </intent-filter>
         </receiver>
     </application>
