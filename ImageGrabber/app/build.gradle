@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.bignerdranch.android.photogallery"
+        applicationId "saoasuna.flickrbooru.android.photograbber"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
